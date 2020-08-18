@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+    
+<!--    <add-node path="/api/package[@name='com.facebook.react.bridge']">
+        <class abstract="true" deprecated="not deprecated" final="false" name="JSCallInvokerHolder" static="true" visibility="public" extends="java.lang.Object">
+        </class>
+    </add-node>
+    
+    <attr path="/api/package[@name='com.facebook.react.views.art']/class[@name='ARTRenderableViewManager']/method[@name='CreateViewInstance']" name="return">java.lang.Object</attr>
+    
+    <add-node path="/api/package[@name='com.facebook.react.modules.network']/class[@name='ForwardingCookieHandler']">
+        <method name="get" return="java.lang.Object" abstract="true" native="false" synchronized="false" static="true" final="false" deprecated="not deprecated" visibility="public" >
+          <parameter name="uri" type="java.lang.Object"/>
+            <parameter name="headers" type="java.lang.Object"/>
+        </method>
+    </add-node>-->
+    
+    <add-node path="/api/package[@name='com.facebook.react.bridge']">
+        <class abstract="false" deprecated="not deprecated" final="false" name="GuardedAsyncTaskInvoker" static="true" visibility="public" extends="java.lang.Object">
+        </class>
+        
+        <class abstract="false" deprecated="not deprecated" final="false" name="GuardedAsyncTask" static="true" visibility="public" extends="java.lang.Object">
+        </class>
+        
+        <class abstract="true" deprecated="not deprecated" final="false" name="ReadableArray" static="true" visibility="public">
+        </class>
+    </add-node>
+    
+    <add-node path="/api/package[@name='com.facebook.yoga']">
+      <class abstract="false" deprecated="not deprecated" final="false" name="YogaNodeJNIPhantomRefs" static="true" visibility="public" extends="java.lang.Object">
+      </class>
+        
+      
+    </add-node>
+    
+    <add-node path="/api/package[@name='com.facebook.react.turbomodule.core.interfaces']">
+      <class abstract="true" deprecated="not deprecated" final="false" name="JSCallInvokerHolder" static="true" visibility="public">
+      </class>
+        
+      
+    </add-node>
+    
+    <add-node path="/api/package[@name='com.facebook.yoga']">
+      <class abstract="true" deprecated="not deprecated" final="false" name="getChildCount" static="true" visibility="public">
+      </class>
+        
+      <class abstract="true" deprecated="not deprecated" final="false" name="getOwner" static="true" visibility="public">
+      </class>
+        
+      <class abstract="true" deprecated="not deprecated" final="false" name="removeChildAt" static="true" visibility="public">
+      </class>
+      
+    </add-node>
+    
+    <add-node path="/api/package[@name='com.facebook.yoga']/class[@name='YogaNodeJNIFinalizer']">
+        
+    </add-node>
+    
+    <add-node path="/api/package[@name='java.net']/class[@name='CookieHandler']">
+        <method name="get" return="java.lang.Object" abstract="true" native="false" synchronized="false" static="true" final="false" deprecated="not deprecated" visibility="public" >
+          <parameter name="uri" type="java.lang.Object"/>
+            <parameter name="requestHeaders" type="java.lang.Object"/>
+        </method>
+    </add-node>
+    
+<!--    <add-node path="/api/package[@name='com.facebook.react.modules.network']/class[@name='ForwardingCookieHandler']">
+        <method name="get" return="java.lang.Object" abstract="false" native="false" synchronized="false" static="true" final="false" deprecated="not deprecated" visibility="public" >
+          <parameter name="uri" type="java.lang.Object"/>
+            <parameter name="headers" type="java.lang.Object"/>
+        </method>
+    </add-node>-->
+    
+    <remove-node path="/api/package[@name='com.facebook.react.devsupport']/class[@name='MultipartStreamReader']" />
+    
+    <remove-node path="/api/package[@name='com.facebook.react.views.text.frescosupport']/class[@name='FrescoBasedReactTextInlineImageViewManager']" />
+    <remove-node path="/api/package[@name='com.facebook.react.views.view']/class[@name='ReactViewManager']" />
+    <remove-node path="/api/package[@name='com.facebook.react.views.scroll']/class[@name='ReactScrollViewManager']" />
+    <remove-node path="/api/package[@name='com.facebook.react.views.textinput']/class[@name='ReactTextInputManager']" />
+    <remove-node path="/api/package[@name='com.facebook.react.views.textinput']/class[@name='ReactTextInputManager']" />
+    <remove-node path="/api/package[@name='com.facebook.react.views.scroll']/class[@name='ReactHorizontalScrollViewManager']" />
+    <remove-node path="/api/package[@name='com.facebook.react.views.text']/class[@name='ReactRawTextManager']" />
+    <remove-node path="/api/package[@name='com.facebook.react.views.text']/class[@name='ReactRawTextManager']" />
+    <remove-node path="/api/package[@name='com.facebook.react.views.text']/class[@name='ReactVirtualTextViewManager']" />
+    <remove-node path="/api/package[@name='com.facebook.react.uimanager']/class[@name='ViewManagerPropertyUpdater']/method[@name='updateProps' and count(parameter)=3 and parameter[1][@type='T'] and parameter[2][@type='V'] and parameter[3][@type='com.facebook.react.uimanager.ReactStylesDiffMap']]" />
+    
+    <remove-node path="/api/package[@name='com.facebook.react.views.art']/class[@name='ARTRenderableViewManager']" />
+    <remove-node path="/api/package[@name='com.facebook.react.views.art']/class[@name='ARTRenderableViewManager']" />
+    <remove-node path="/api/package[@name='com.facebook.react.views.art']/class[@name='ARTSurfaceViewManager']" />
+    <remove-node path="/api/package[@name='com.facebook.react.uimanager']/class[@name='RootViewManager']" />
+    <remove-node path="/api/package[@name='com.facebook.react.views.modal']/class[@name='ReactModalHostManager']" />
+    <remove-node path="/api/package[@name='com.facebook.react.views.scroll']/class[@name='ReactHorizontalScrollContainerViewManager']" />
+    <remove-node path="/api/package[@name='com.facebook.react.views.unimplementedview']/class[@name='ReactUnimplementedViewManager']" />
+    
+    <remove-node path="/api/package[@name='com.facebook.yoga']/class[@name='YogaNodeJNIFinalizer']" />
+    <remove-node path="/api/package[@name='com.facebook.react.views.progressbar']/class[@name='ReactProgressBarViewManager']" />
+    <remove-node path="/api/package[@name='com.facebook.react.modules.network']/class[@name='ForwardingCookieHandler']" />
+    <remove-node path="/api/package[@name='com.facebook.react.views.art']/class[@name='ARTRenderableViewManager']/method[@name='updateExtraData' and count(parameter)=2 and parameter[1][@type='android.view.View'] and parameter[2][@type='java.lang.Object']]" />
+    <remove-node path="/api/package[@name='com.facebook.yoga']/class[@name='YogaNode']/method[@name='getOwner']" />
+    <remove-node path="/api/package[@name='com.facebook.yoga']/class[@name='YogaNode']/method[@name='getParent']" />
+    <remove-node path="/api/package[@name='com.facebook.yoga']/class[@name='YogaNode']/method[@name='removeChildAt']" />
+    <remove-node path="/api/package[@name='com.facebook.yoga']/class[@name='YogaNode']/method[@name='getChildAt']" />
+    <remove-node path="/api/package[@name='com.facebook.yoga']/class[@name='YogaNodeJNIBase']/method[@name='cloneWithoutChildren' and count(parameter)=0]" />
+    <remove-node path="/api/package[@name='com.facebook.react.views.art']/class[@name='ARTRenderableViewManager']/method[@name='createViewInstance' and count(parameter)=1 and parameter[1][@type='com.facebook.react.uimanager.ThemedReactContext']]" />
+    
+<!--    <add-node path="/api/package[@name='com.facebook.react.uimanager']">
+      <method name="createViewInstance" return="java.lang.Object" abstract="true" native="false" synchronized="false" static="true" final="false" deprecated="not deprecated" visibility="public" >
+          <parameter name="reactContext" type="java.lang.Object"/>
+            <parameter name="jsResponderHandler" type="java.lang.Object"/>
+      </method>
+    </add-node>
+    
+    <add-node path="/api/package[@name='com.facebook.react.views.unimplementedview']">
+      
+    </add-node>-->
+    
+</metadata>

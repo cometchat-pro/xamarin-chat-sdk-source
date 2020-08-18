@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+    
+    <remove-node path= "/api/package[@name='org.jivesoftware.smackx.filetransfer']/class[@name='FaultTolerantNegotiator']/method[@name='newStreamInitiation' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String']]"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smackx.filetransfer']/class[@name='IBBTransferNegotiator']/method[@name='newStreamInitiation' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String']]"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smackx.filetransfer']/class[@name='Socks5TransferNegotiator']/method[@name='newStreamInitiation' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String']]"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smackx.bytestreams.ibb']/class[@name='InBandBytestreamManager']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smackx.iqprivate.provider']/interface[@name='PrivateDataProvider']/method[@name='parsePrivateData' and count(parameter)=1 and parameter[1][@type='org.xmlpull.v1.XmlPullParser']]"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smackx.filetransfer']/class[@name='FaultTolerantNegotiator']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smackx.filetransfer']/class[@name='IBBTransferNegotiator']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smackx.bookmarks']/class[@name='Bookmarks']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smackx.bookmarks']/class[@name='Bookmarks.Provider']/method[@name='parsePrivateData' and count(parameter)=1 and parameter[1][@type='org.xmlpull.v1.XmlPullParser']]"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smackx.filetransfer']/class[@name='Socks5TransferNegotiator']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smackx.bytestreams.ibb']/class[@name='InBandBytestreamRequest']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smackx.iqprivate.packet']/class[@name='DefaultPrivateData']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smackx.bytestreams.socks5']/class[@name='Socks5BytestreamManager']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smackx.muc']/interface[@name='UserStatusListener']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smackx.bytestreams.socks5']/class[@name='Socks5BytestreamRequest']"/>
+    
+    <remove-node path= "/api/package[@name='org.jivesoftware.smackx.receipts']/interface[@name='ReceiptReceivedListener']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smackx.pep']/interface[@name='PEPListener']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smackx.muc']/interface[@name='InvitationListener']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smackx.pubsub.listener']/interface[@name='NodeConfigListener']"/>
+    
+</metadata>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+    
+    <remove-node path= "/api/package[@name='org.kxml2.kdom']/class[@name='Node']/method[@name='parse' and count(parameter)=1 and parameter[1][@type='org.xmlpull.v1.XmlPullParser']]"/>
+    <remove-node path= "/api/package[@name='org.xmlpull.v1']/class[@name='XmlPullParserException']/constructor[@name='XmlPullParserException' and count(parameter)=3 and parameter[1][@type='java.lang.String'] and parameter[2][@type='org.xmlpull.v1.XmlPullParser'] and parameter[3][@type='java.lang.Throwable']]"/>
+    <remove-node path= "/api/package[@name='org.xmlpull.v1']/class[@name='XmlPullParserFactory']/method[@name='newPullParser' and count(parameter)=0]"/>
+</metadata>
