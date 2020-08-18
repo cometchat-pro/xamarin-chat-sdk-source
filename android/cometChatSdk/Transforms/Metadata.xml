@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+    
+    <remove-node path="/api/package[@name='com.cometchat.pro.core']/class[@name='CarbonGroupJoinIQ']" />
+    <remove-node path="/api/package[@name='com.cometchat.pro.extensions']/class[@name='DeliveredAtExtensionProvider']"/>
+    <remove-node path="/api/package[@name='com.cometchat.pro.extensions']/class[@name='DeliveredExtensionProvider']"/>
+    <remove-node path="/api/package[@name='com.cometchat.pro.extensions']/class[@name='ReadAtExtensionProvider']"/>
+    <remove-node path="/api/package[@name='com.cometchat.pro.core']/class[@name='PresenceIQProvider']" />
+    <remove-node path="/api/package[@name='com.cometchat.pro.extensions']/class[@name='ReadExtensionProvider']"/>
+    <remove-node path="/api/package[@name='com.cometchat.pro.extensions']/class[@name='UserExtensionProvider']"/>
+    <remove-node path="/api/package[@name='com.cometchat.pro.core']/class[@name='PresenceIQ']"/>
+    <remove-node path="/api/package[@name='com.cometchat.pro.core']/class[@name='SettingsIQ']" />
+    <remove-node path="/api/package[@name='com.cometchat.pro.core']/class[@name='SettingsIQProvider']/method[@name='parse' and count(parameter)=2 and parameter[1][@type='org.xmlpull.v1.XmlPullParser'] and parameter[2][@type='int']]"/>
+</metadata>

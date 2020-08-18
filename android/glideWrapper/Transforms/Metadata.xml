@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+    
+    <remove-node path="/api/package[@name='com.bumptech.glide']/class[@name='RequestManager']"/>
+    <remove-node path="/api/package[@name='com.bumptech.glide.load.data']/class[@name='AssetFileDescriptorLocalUriFetcher']"/>
+    <remove-node path="/api/package[@name='com.bumptech.glide.load.engine.bitmap_recycle']/class[@name='ByteArrayAdapter']"/>
+    <remove-node path="/api/package[@name='com.bumptech.glide.load.engine.bitmap_recycle']/class[@name='IntegerArrayAdapter']"/>
+    <remove-node path="/api/package[@name='com.bumptech.glide.load.data']/class[@name='FileDescriptorAssetPathFetcher']"/>
+    <remove-node path="/api/package[@name='com.bumptech.glide.load.model']/class[@name='AssetUriLoader']"/>
+    <remove-node path="/api/package[@name='com.bumptech.glide.load.data']/class[@name='FileDescriptorLocalUriFetcher']"/>
+    <remove-node path="/api/package[@name='com.bumptech.glide.load.engine.executor']/class[@name='GlideExecutor']"/>
+    <remove-node path="/api/package[@name='com.bumptech.glide.load.model']/class[@name='ByteArrayLoader']"/>
+    <remove-node path="/api/package[@name='com.bumptech.glide.load.data']/class[@name='StreamAssetPathFetcher']"/>
+    <remove-node path="/api/package[@name='com.bumptech.glide.load.model']/class[@name='UrlUriLoader']"/>
+    <remove-node path="/api/package[@name='com.bumptech.glide.load.model']/class[@name='UriLoader']"/>
+    <remove-node path="/api/package[@name='com.bumptech.glide.load.resource.bitmap']/class[@name='BitmapDrawableEncoder']"/>
+    <remove-node path="/api/package[@name='com.bumptech.glide.load.data']/class[@name='StreamLocalUriFetcher']"/>
+    <remove-node path="/api/package[@name='com.bumptech.glide.load.resource.bitmap']/class[@name='BitmapEncoder']"/>
+    <remove-node path="/api/package[@name='com.bumptech.glide.load.model']/class[@name='FileLoader']"/>
+    <remove-node path="/api/package[@name='com.bumptech.glide.load.model.stream']/class[@name='BaseGlideUrlLoader']"/>
+    <remove-node path="/api/package[@name='com.bumptech.glide.request.transition']/class[@name='BitmapTransitionFactory']"/>
+    <remove-node path="/api/package[@name='com.bumptech.glide.load.model']/class[@name='StringLoader']"/>
+    <remove-node path="/api/package[@name='com.bumptech.glide.request.target']/class[@name='BitmapThumbnailImageViewTarget']"/>
+    <remove-node path="/api/package[@name='com.bumptech.glide.load.model']/class[@name='ResourceLoader']"/>
+    <remove-node path="/api/package[@name='com.bumptech.glide.request.target']/class[@name='CustomTarget']"/>
+    <remove-node path="/api/package[@name='com.bumptech.glide.request.target']/class[@name='BaseTarget']"/>
+    <remove-node path="/api/package[@name='com.bumptech.glide.request.target']/class[@name='DrawableImageViewTarget']"/>
+    <remove-node path="/api/package[@name='com.bumptech.glide.request.target']/class[@name='DrawableThumbnailImageViewTarget']"/>
+    <remove-node path="/api/package[@name='com.bumptech.glide.request.target']/class[@name='CustomViewTarget']"/>
+    <remove-node path="/api/package[@name='com.bumptech.glide.request.target']/class[@name='ImageViewTarget']/method[@name='onResourceReady' and count(parameter)=2 and parameter[1][@type='Z'] and parameter[2][@type='com.bumptech.glide.request.transition.Transition&lt;? super Z&gt;']]"/>
+    <remove-node path="/api/package[@name='com.bumptech.glide.load.data']/class[@name='InputStreamRewinder']"/>
+    <remove-node path="/api/package[@name='com.bumptech.glide.load.model']/class[@name='StreamEncoder']"/>
+    <remove-node path="/api/package[@name='com.bumptech.glide.load.resource.bitmap']/class[@name='StreamBitmapDecoder']"/>
+    <remove-node path="/api/package[@name='com.bumptech.glide.load.resource.bytes']/class[@name='BytesResource']"/>
+    
+
+</metadata>

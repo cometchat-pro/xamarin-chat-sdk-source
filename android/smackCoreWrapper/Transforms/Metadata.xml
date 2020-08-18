@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+    
+    <remove-node path="/api/package[@name='org.jivesoftware.smack']/class[@name='AbstractXMPPConnection']/method[@name='parseAndProcessStanza' and count(parameter)=1 and parameter[1][@type='org.xmlpull.v1.XmlPullParser']]" />
+    <remove-node path="/api/package[@name='org.jivesoftware.smack']/class[@name='AbstractXMPPConnection']/method[@name='parseFeatures' and count(parameter)=1 and parameter[1][@type='org.xmlpull.v1.XmlPullParser']]" />
+    <remove-node path= "/api/package[@name='org.jivesoftware.smack.filter']/class[@name='IQTypeFilter']"/>
+    <remove-node path="/api/package[@name='org.jivesoftware.smack.filter']/class[@name='MessageTypeFilter']" />
+    <remove-node path="/api/package[@name='org.jivesoftware.smack.filter']/class[@name='MessageWithBodiesFilter']" />
+    <remove-node path= "/api/package[@name='org.jivesoftware.smack.filter']/class[@name='MessageWithSubjectFilter']"/>
+    <remove-node path="/api/package[@name='org.jivesoftware.smack.filter']/class[@name='PresenceTypeFilter']" />
+    <remove-node path="/api/package[@name='org.jivesoftware.smack.filter']/class[@name='ThreadFilter']" />
+    <remove-node path= "/api/package[@name='org.jivesoftware.smack.sasl']/class[@name='SASLAnonymous']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smack.sasl.packet']/class[@name='SaslStreamElements']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smack.sasl.core']/class[@name='SASLXOauth2Mechanism']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smack.util']/class[@name='PacketParserUtils']/method[@name='addExtensionElement' and count(parameter)=4 and parameter[1][@type='java.util.Collection&lt;org.jivesoftware.smack.packet.ExtensionElement&gt;'] and parameter[2][@type='org.xmlpull.v1.XmlPullParser'] and parameter[3][@type='java.lang.String'] and parameter[4][@type='java.lang.String']]"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smack.compress.packet']/class[@name='Compress']"/>
+    <remove-node path="/api/package[@name='org.jivesoftware.smack.sasl.core']/class[@name='SCRAMSHA1Mechanism']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smack.compress.packet']/class[@name='Compress.Feature']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smack.compress.packet']/class[@name='Compressed']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smack']/class[@name='AbstractXMPPConnection']/method[@name='unregisterIQRequestHandler' and count(parameter)=1 and parameter[1][@type='org.jivesoftware.smack.iqrequest.IQRequestHandler']]"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smack.packet']/class[@name='Bind']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smack.packet']/class[@name='Mechanisms']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smack.packet']/class[@name='Session']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smack.packet']/class[@name='Message']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smack']/class[@name='AbstractXMPPConnection']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smack.packet']/class[@name='StartTls']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smack.packet']/class[@name='StreamError']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smack.packet']/class[@name='EmptyResultIQ']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smack.packet']/class[@name='ErrorIQ']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smack.packet']/class[@name='Presence']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smack.packet']/class[@name='StreamOpen']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smack.util']/class[@name='LazyStringBuilder']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smack.provider']/class[@name='BindIQProvider']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smack.provider']/class[@name='Provider']/method[@name='parse' and count(parameter)=2 and parameter[1][@type='org.xmlpull.v1.XmlPullParser'] and parameter[2][@type='int']]"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smack.provider']/class[@name='EmbeddedExtensionProvider']/method[@name='parse' and count(parameter)=2 and parameter[1][@type='org.xmlpull.v1.XmlPullParser'] and parameter[2][@type='int']]"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smack.util.dns']/class[@name='SRVRecord']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smack.util']/class[@name='PacketParserUtils']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smack.util']/class[@name='XmlStringBuilder']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smack.packet']/class[@name='UnparsedIQ']"/>
+    <remove-node path= "/api/package[@name='org.jivesoftware.smack.provider']/class[@name='IntrospectionProvider']"/>
+    <remove-node path="/api/package[@name='org.jivesoftware.smack.util']/class[@name='ParserUtils']"/>
+    <remove-node path="/api/package[@name='org.jivesoftware.smack.util']/class[@name='StringUtils']"/>
+    <remove-node path="/api/package[@name='org.jivesoftware.smack.provider']/class[@name='Provider']/method[@name='parse' and count(parameter)=1 and parameter[1][@type='org.xmlpull.v1.XmlPullParser']]" />
+
+
+    
+</metadata>

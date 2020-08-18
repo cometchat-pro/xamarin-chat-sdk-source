@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2F4760BD-A840-4F11-A350-295773A961B4}</ProjectGuid>
+    <ProjectTypeGuids>{10368E6C-D01B-4462-8E8B-01FC667A7035};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{77efb91c-a7e9-4b0e-a7c5-31eeec3c6d46}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>uikitSdk</RootNamespace>
+    <AssemblyName>uikitSdk</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>True</Deterministic>
+    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
+    <AndroidClassParser>class-parse</AndroidClassParser>
+    <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>portable</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Jars\AboutJars.txt" />
+    <None Include="Additions\AboutAdditions.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <TransformFile Include="Transforms\Metadata.xml" />
+    <TransformFile Include="Transforms\EnumFields.xml" />
+    <TransformFile Include="Transforms\EnumMethods.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <LibraryProjectZip Include="Jars\uikit.aar" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\androidJscWrapper\androidJscWrapper.csproj">
+      <Project>{C6A04AEE-FD30-4AE5-B472-ED468432ACB9}</Project>
+      <Name>androidJscWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\annotationWrapper\annotationWrapper.csproj">
+      <Project>{D27BC262-DEE9-4443-B073-41C63826C1C2}</Project>
+      <Name>annotationWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\cometChatSdk\cometChatSdk.csproj">
+      <Project>{A83354FA-DF15-479E-A44C-51AEFEFC2104}</Project>
+      <Name>cometChatSdk</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\commonsLangWrapper\commonsLangWrapper.csproj">
+      <Project>{C00DF432-0B9B-4187-9C4C-E10A7607282F}</Project>
+      <Name>commonsLangWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\disklrucacheWrapper\disklrucacheWrapper.csproj">
+      <Project>{7851DAC2-235A-4BA9-A170-50DCD06507C3}</Project>
+      <Name>disklrucacheWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\duktapeWrapper\duktapeWrapper.csproj">
+      <Project>{10C989AC-B1F0-4BB4-B1A0-96AE75054537}</Project>
+      <Name>duktapeWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\glidecoderWrapper\glidecoderWrapper.csproj">
+      <Project>{D438BD50-A4B3-4494-B866-EAEDCA46BD37}</Project>
+      <Name>glidecoderWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\glideWrapper\glideWrapper.csproj">
+      <Project>{44FDA31D-B026-45E3-B63A-F8F7B6F2F582}</Project>
+      <Name>glideWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\imWrapper\imWrapper.csproj">
+      <Project>{4890387C-7076-4EDC-84B1-DACBEBAA9919}</Project>
+      <Name>imWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\jistimeetWrapper\jistimeetWrapper.csproj">
+      <Project>{2244D5AC-1AC8-48A1-8E47-93BF86DC5B34}</Project>
+      <Name>jistimeetWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\jxmppUtilWrapper\jxmppUtilWrapper.csproj">
+      <Project>{0048DBA6-3F8B-4576-9017-DE3FF6D3A1DF}</Project>
+      <Name>jxmppUtilWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\kxmlWrapper\kxmlWrapper.csproj">
+      <Project>{52538AAD-BF0D-4CCC-9D43-94152FFB5FF9}</Project>
+      <Name>kxmlWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\materialWrapper\materialWrapper.csproj">
+      <Project>{5D69130D-578C-4136-A73F-8863618F1D41}</Project>
+      <Name>materialWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\minidnsWrapper\minidnsWrapper.csproj">
+      <Project>{0EC8AC67-02FE-43BD-950E-36D4A44C216C}</Project>
+      <Name>minidnsWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\navigationUIWrapper\navigationUIWrapper.csproj">
+      <Project>{1AADE1DB-29BA-48E0-837F-C3B7EB7F85C0}</Project>
+      <Name>navigationUIWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\okhttpconnectionWrapper\okhttpconnectionWrapper.csproj">
+      <Project>{8FC7BC1B-6DA1-4B5E-9F19-B268E2624ADD}</Project>
+      <Name>okhttpconnectionWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\okhttpWrapper\okhttpWrapper.csproj">
+      <Project>{84156205-F0AD-4E09-8471-64BE20453694}</Project>
+      <Name>okhttpWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\okioWrapper\okioWrapper.csproj">
+      <Project>{BD0C353A-CD30-44CA-8D30-49E8BD7F4878}</Project>
+      <Name>okioWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReactNativeWrapper\ReactNativeWrapper.csproj">
+      <Project>{AD96293B-D0F3-41F9-B506-681903ADD7B0}</Project>
+      <Name>ReactNativeWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\shimmerWrapper\shimmerWrapper.csproj">
+      <Project>{647682AF-A29E-4FB9-9B9F-41DECCC4BE3B}</Project>
+      <Name>shimmerWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\smackAndroidWrapper\smackAndroidWrapper.csproj">
+      <Project>{EC2F261A-A513-4834-A7B4-2C8AFB2BA638}</Project>
+      <Name>smackAndroidWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\smackCoreWrapper\smackCoreWrapper.csproj">
+      <Project>{5A487BA1-B5EE-4BE3-97AF-559EC5D7C944}</Project>
+      <Name>smackCoreWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\smackExperWrapper\smackExperWrapper.csproj">
+      <Project>{1B29184B-F78B-47CA-ABC0-9AED17774D63}</Project>
+      <Name>smackExperWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\smackExtensionWrapper\smackExtensionWrapper.csproj">
+      <Project>{2E8D6AE9-51C8-444D-8814-3C6A7C98EFFE}</Project>
+      <Name>smackExtensionWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\smackResolverWrapper\smackResolverWrapper.csproj">
+      <Project>{3063C33A-DFE2-405D-8BB8-8FDC188E27F5}</Project>
+      <Name>smackResolverWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\smackSaslWrapper\smackSaslWrapper.csproj">
+      <Project>{9AB4578B-4FB9-4712-AB00-AEE08C5D6DC6}</Project>
+      <Name>smackSaslWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\smackTcpWrapper\smackTcpWrapper.csproj">
+      <Project>{8600B29B-906C-48D8-8E42-46F0B5315478}</Project>
+      <Name>smackTcpWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\timberWrapper\timberWrapper.csproj">
+      <Project>{99AEEB88-C178-4352-A349-62DFA36155C3}</Project>
+      <Name>timberWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\transitionWrapper\transitionWrapper.csproj">
+      <Project>{76368661-B0D5-4292-A812-D4FC01E3A2DA}</Project>
+      <Name>transitionWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\viewpager2Wrapper\viewpager2Wrapper.csproj">
+      <Project>{FCCD2FE1-65D7-4183-9C34-D8F6CF076A2E}</Project>
+      <Name>viewpager2Wrapper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

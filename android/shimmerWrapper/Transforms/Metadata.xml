@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+    
+<!--    <add-node path="/api/package[@name='com.facebook.shimmer']/class[@name='Shimmer']">
+        <method name="getThis" return="void" abstract="true" native="false" synchronized="false" static="true" final="false" deprecated="not deprecated" visibility="public" >
+          
+        </method>
+    </add-node>-->
+<!--    <add-node path="/api/package[@name='com.facebook.shimmer']">
+        <class abstract="false" deprecated="not deprecated" final="false" name="AlphaHighlightBuilder" static="true" visibility="public" extends="java.lang.Object">
+            <method name="getThis" return="void" abstract="true" native="false" synchronized="false" static="true" final="false" deprecated="not deprecated" visibility="public" >
+          
+            </method>
+        </class>
+        
+    </add-node>-->
+    <remove-node path="/api/package[@name='com.facebook.shimmer']/class[@name='ShimmerFrameLayout']/method[@name='onLayout' and count(parameter)=5 and parameter[1][@type='boolean'] and parameter[2][@type='int'] and parameter[3][@type='int'] and parameter[4][@type='int'] and parameter[5][@type='int']]" />
+    <remove-node path="/api/package[@name='com.facebook.shimmer']/class[@name='Shimmer.Builder']/method[@name='getThis' and count(parameter)=0]" />
+</metadata>

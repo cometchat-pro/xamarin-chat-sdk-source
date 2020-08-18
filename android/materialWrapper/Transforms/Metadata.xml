@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+    
+    <remove-node path="/api/package[@name='com.google.android.material.animation']/class[@name='AnimationUtils']" />
+    
+    <remove-node path="/api/package[@name='com.google.android.material.button']/class[@name='MaterialButtonToggleGroup']" />
+    <remove-node path="/api/package[@name='com.google.android.material.textfield']/class[@name='TextInputLayout']" />
+    <remove-node path="/api/package[@name='com.google.android.material.internal']/class[@name='ViewUtils']" />
+    
+    <remove-node path="/api/package[@name='com.google.android.material.bottomnavigation']/class[@name='BottomNavigationView']" />
+    <remove-node path="/api/package[@name='com.google.android.material.snackbar']/class[@name='BaseTransientBottomBar']" />
+    
+    
+    <remove-node path="/api/package[@name='com.google.android.material.chip']/class[@name='ChipGroup']" />
+    <remove-node path="/api/package[@name='com.google.android.material.navigation']/class[@name='NavigationView']" />
+    <remove-node path="/api/package[@name='com.google.android.material.datepicker']/interface[@name='MaterialPickerOnPositiveButtonClickListener']" />
+    
+    
+    <remove-node path="/api/package[@name='com.google.android.material.shape']/class[@name='ShapeAppearancePathProvider']" />
+    <remove-node path="/api/package[@name='com.google.android.material.animation']/class[@name='ArgbEvaluatorCompat']" />
+    <remove-node path="/api/package[@name='com.google.android.material.animation']/class[@name='ChildrenAlphaProperty']" />
+    <remove-node path="/api/package[@name='com.google.android.material.animation']/class[@name='DrawableAlphaProperty']" />
+    <remove-node path="/api/package[@name='com.google.android.material.animation']/class[@name='ImageMatrixProperty']" />
+    <remove-node path="/api/package[@name='com.google.android.material.animation']/class[@name='MatrixEvaluator']" />
+    <remove-node path="/api/package[@name='com.google.android.material.circularreveal']/class[@name='CircularRevealWidget.CircularRevealEvaluator']" />
+    <remove-node path="/api/package[@name='com.google.android.material.circularreveal']/class[@name='CircularRevealWidget.CircularRevealProperty']" />
+    <remove-node path="/api/package[@name='com.google.android.material.circularreveal']/class[@name='CircularRevealWidget.CircularRevealScrimColorProperty']" />
+    <remove-node path="/api/package[@name='com.google.android.material.tabs']/class[@name='TabLayout']" />
+    <remove-node path="/api/package[@name='com.google.android.material.snackbar']/class[@name='Snackbar.SnackbarLayout']/method[@name='setBackground' and count(parameter)=1 and parameter[1][@type='android.graphics.drawable.Drawable']]" />
+    <remove-node path="/api/package[@name='com.google.android.material.snackbar']/class[@name='Snackbar.SnackbarLayout']/method[@name='setBackgroundTintList' and count(parameter)=1 and parameter[1][@type='android.content.res.ColorStateList']]" />
+    <remove-node path="/api/package[@name='com.google.android.material.snackbar']/class[@name='Snackbar.SnackbarLayout']/method[@name='setBackgroundTintMode' and count(parameter)=1 and parameter[1][@type='android.graphics.PorterDuff.Mode']]" />
+</metadata>
