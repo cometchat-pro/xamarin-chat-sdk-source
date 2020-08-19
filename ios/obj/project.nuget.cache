@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "WfNmaoCtgU6oqyIh47kM+TCMaCeQ1Qz85DamZOgHXJoc5v9me5pAEzShOi1hmUtwICMmZ/SkyEORLLrSBUXhwg==",
+  "success": true,
+  "projectFilePath": "/Volumes/Work/workspace/current/xamarin/cometChatComplete/ios/demoProject/CometChatProSdk/CometChatProSDK.csproj",
+  "expectedPackageFiles": [
+    "/Users/lovefamily/.nuget/packages/sqlite3/3.8.8.3/sqlite3.3.8.8.3.nupkg.sha512",
+    "/Users/lovefamily/.nuget/packages/xamarin.swift4/4.0.0/xamarin.swift4.4.0.0.nupkg.sha512",
+    "/Users/lovefamily/.nuget/packages/xamarin.swift4.swiftononesupport/4.2.1.1/xamarin.swift4.swiftononesupport.4.2.1.1.nupkg.sha512",
+    "/Users/lovefamily/.nuget/packages/xamarin.swift4.uikit/4.2.1.1/xamarin.swift4.uikit.4.2.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}

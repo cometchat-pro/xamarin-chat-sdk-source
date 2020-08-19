@@ -1,0 +1,160 @@
+{
+  "version": 3,
+  "targets": {
+    "Xamarin.iOS,Version=v1.0": {
+      "sqlite3/3.8.8.3": {
+        "type": "package"
+      },
+      "Xamarin.Swift4/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/xamarinios10/Xamarin.Swift4.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Xamarin.Swift4.dll": {}
+        },
+        "build": {
+          "build/Xamarin.Swift4.targets": {}
+        }
+      },
+      "Xamarin.Swift4.SwiftOnoneSupport/4.2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Swift4": "4.0.0"
+        },
+        "compile": {
+          "lib/xamarinios10/Xamarin.Swift4.SwiftOnoneSupport.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Xamarin.Swift4.SwiftOnoneSupport.dll": {}
+        }
+      },
+      "Xamarin.Swift4.UIKit/4.2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Swift4": "4.0.0"
+        },
+        "compile": {
+          "lib/xamarinios10/Xamarin.Swift4.UIKit.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Xamarin.Swift4.UIKit.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "sqlite3/3.8.8.3": {
+      "sha512": "O5V+mR7NmiQPenwkhjI0DHt8u0oCszcd5zFK6Wk0xKcRfBzOw0dmY1VltFpD7r8pDJKkkk8Sja485FOqCeyScg==",
+      "type": "package",
+      "path": "sqlite3/3.8.8.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/configurations.autopkg",
+        "build/native/default-propertiesui.xml",
+        "build/native/include/sqlite3.h",
+        "build/native/include/sqlite3ext.h",
+        "build/native/lib/Win32/v120/Debug/sqlite3d.lib",
+        "build/native/lib/Win32/v120/Release/sqlite3.lib",
+        "build/native/lib/x64/v120/Debug/sqlite3d.lib",
+        "build/native/lib/x64/v120/Release/sqlite3.lib",
+        "build/native/sqlite3.targets",
+        "build/publisher-info.txt",
+        "sqlite3.3.8.8.3.nupkg.sha512",
+        "sqlite3.nuspec"
+      ]
+    },
+    "Xamarin.Swift4/4.0.0": {
+      "sha512": "W16ljdjhQ4yQKjOE0/1WZbBTpQkN60g3agvqENExl9KDnixyDDpnAfpTlPLnVtSYPZbE28euzYyh0HpG1y451w==",
+      "type": "package",
+      "path": "xamarin.swift4/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Xamarin.Swift4.targets",
+        "lib/xamarinios10/Xamarin.Swift4.dll",
+        "xamarin.swift4.4.0.0.nupkg.sha512",
+        "xamarin.swift4.nuspec"
+      ]
+    },
+    "Xamarin.Swift4.SwiftOnoneSupport/4.2.1.1": {
+      "sha512": "Bc1T05wIHZOoQU5gSUQPzj0yXcnyvx/u57SmHdadMKG4t6k+2c4YZQvd86i8BaMaFnBAQtlTFYH5fGm2GByImQ==",
+      "type": "package",
+      "path": "xamarin.swift4.swiftononesupport/4.2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/xamarinios10/Xamarin.Swift4.SwiftOnoneSupport.dll",
+        "xamarin.swift4.swiftononesupport.4.2.1.1.nupkg.sha512",
+        "xamarin.swift4.swiftononesupport.nuspec"
+      ]
+    },
+    "Xamarin.Swift4.UIKit/4.2.1.1": {
+      "sha512": "B8RKKKJShSEUPC9nMZO/DVYUhWAF9Qi7yzlQYw+vy0VsyWgBJRYaYABsNgwF9nmKaWURDrnY9yh7Blb63zfA/Q==",
+      "type": "package",
+      "path": "xamarin.swift4.uikit/4.2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/xamarinios10/Xamarin.Swift4.UIKit.dll",
+        "xamarin.swift4.uikit.4.2.1.1.nupkg.sha512",
+        "xamarin.swift4.uikit.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "Xamarin.iOS,Version=v1.0": [
+      "Xamarin.Swift4.SwiftOnoneSupport >= 4.2.1.1",
+      "Xamarin.Swift4.UIKit >= 4.2.1.1",
+      "sqlite3 >= 3.8.8.3"
+    ]
+  },
+  "packageFolders": {
+    "/Users/lovefamily/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Volumes/Work/workspace/current/xamarin/cometChatComplete/ios/demoProject/CometChatProSdk/CometChatProSDK.csproj",
+      "projectName": "CometChatPro",
+      "projectPath": "/Volumes/Work/workspace/current/xamarin/cometChatComplete/ios/demoProject/CometChatProSdk/CometChatProSDK.csproj",
+      "packagesPath": "/Users/lovefamily/.nuget/packages/",
+      "outputPath": "/Volumes/Work/workspace/current/xamarin/cometChatComplete/ios/demoProject/CometChatProSdk/obj/",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "/Users/lovefamily/.config/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "xamarinios10"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "xamarinios10": {
+        "dependencies": {
+          "Xamarin.Swift4.SwiftOnoneSupport": {
+            "target": "Package",
+            "version": "[4.2.1.1, )"
+          },
+          "Xamarin.Swift4.UIKit": {
+            "target": "Package",
+            "version": "[4.2.1.1, )"
+          },
+          "sqlite3": {
+            "target": "Package",
+            "version": "[3.8.8.3, )"
+          }
+        }
+      }
+    }
+  }
+}

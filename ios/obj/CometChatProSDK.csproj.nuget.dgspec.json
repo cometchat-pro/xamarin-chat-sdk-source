@@ -1,0 +1,52 @@
+{
+  "format": 1,
+  "restore": {
+    "/Volumes/Work/workspace/current/xamarin/cometChatComplete/ios/demoProject/CometChatProSdk/CometChatProSDK.csproj": {}
+  },
+  "projects": {
+    "/Volumes/Work/workspace/current/xamarin/cometChatComplete/ios/demoProject/CometChatProSdk/CometChatProSDK.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/Work/workspace/current/xamarin/cometChatComplete/ios/demoProject/CometChatProSdk/CometChatProSDK.csproj",
+        "projectName": "CometChatPro",
+        "projectPath": "/Volumes/Work/workspace/current/xamarin/cometChatComplete/ios/demoProject/CometChatProSdk/CometChatProSDK.csproj",
+        "packagesPath": "/Users/lovefamily/.nuget/packages/",
+        "outputPath": "/Volumes/Work/workspace/current/xamarin/cometChatComplete/ios/demoProject/CometChatProSdk/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/lovefamily/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "xamarinios10"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "xamarinios10": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "dependencies": {
+            "Xamarin.Swift4.SwiftOnoneSupport": {
+              "target": "Package",
+              "version": "[4.2.1.1, )"
+            },
+            "Xamarin.Swift4.UIKit": {
+              "target": "Package",
+              "version": "[4.2.1.1, )"
+            },
+            "sqlite3": {
+              "target": "Package",
+              "version": "[3.8.8.3, )"
+            }
+          }
+        }
+      }
+    }
+  }
+}
